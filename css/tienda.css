@@ -12,7 +12,7 @@ body{
 
 .logo {
     text-align: center;
-    height: 5.7em;
+    height: 2.3em;
     margin: .5em;
 }
 
@@ -132,7 +132,7 @@ form span a {
 /* FOOTER */
 
 span a {
-    color: #000;
+    color: #f4f4f4;
     text-decoration: none;
 }
 
@@ -148,11 +148,6 @@ span a:hover {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-}
-
-.ilu {
-    width: 100%;
-    padding: .1em 0 1em 0;
 }
 
 /* ICONO DE REDIRECCIÓN A WHATSAPP */
