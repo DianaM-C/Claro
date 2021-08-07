@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/agendar_cita.css">
+    <link rel="shortcut icon" href="/img/TC.ico" type="image/x-icon">
+    <script src="/js/agendar_cita.js"></script>
+    <!-- BootsTrap CSS - Js -->
+    <link rel="stylesheet" href="/dist/css/bootstrap.css">
+    <script src="/dist/js/bootstrap.js"></script>
+    <title>TeleConecta - Agendar una cita</title>
+</head>
+<body class="bg-light m-0 p-0">
+    <!--! BARRA SUPERIOR -->
+    <div class="container-fluid m-0 p-2 bg-primary d-flex">
+        <a href="/personas/index.html" class="d-sm-block d-none"><img class="logo me-3" src="/img/Logo TC 1 Sin fondo.png" alt="TC Logo" class="one" ></a>
+        <div class="container-fluid">
+            <nav class="navbar navbar-dark">
+                <div class="container-fluid">
+                    <a href="https://www.intercorp.com.pe/" target="_blank" class="d-sm-block d-none"><img class="cero" src="/img/intercorp.png" alt="logo intercorp"></a>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-danger" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-block d-sm-none text-warning" href="/personas/index.html">TeleConecta</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/personas/index.html">Hogar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/personas/tienda.html">Móvil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/personas/agendar_cita.html">Atención al cliente</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Contáctenos
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Agendar una cita</a></li>
+                                    <li><a class="dropdown-item" href="#">Contacto por WhatsApp</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--? Audio de acompañamiento -->
+    <audio src="/aud/YELLOW（神山羊）_offvocal（耳コピ）.mp3" controls autoplay loop></audio>
+    <!--! FORMILARIO CLIENTE -->
+    <div class="container-fluid m-0 p-0 d-flex">
+        <!-- Imagen principal -->
+        <div class="container-fluid m-0 p-0 col-6">
+            <img src="/img/handcell.png" alt="" class="col-12">
+        </div>
+        <div class="container col-6 my-5">
+            <h1 class="text-center m-0 p-0 fw-light">Ahorra tiempo y evita colas<br>Agenda tu cita</h1>
+            <!--? Formulario. Se muestra en pantallas grandes -->
+            <div class="container-fluid col-12 text-dark p-md-5 p-3 d-sm-block d-none">
+                <div class="container form-register">
+                    <form class="form" action="#">
+                        <h1>Ingresa tu número de documento</h1>
+                        <select name="documento" id="documento" class="space">
+                            <option value="documento1">DNI</option>
+                            <option value="documento2">CARNÉ DE EXTRANJERÍA</option>
+                            <option value="documento3">PASAPORTE</option>
+                            <option value="documento4">RUC</option>
+                            <option value="documento5">PTP</option>
+                        </select>
+                        <input class="spaces" type="text" name="numDocumento" id="" placeholder="Número de documento" required maxlength="8" onkeydown="return validarNumero (evento);"><br>
+                        <input class="btns" type="submit" value="Continuar">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--? Formulario. Se muestra en dispositivos móviles pequeños -->
+    <div class="container p-5 col-12 text-dark p-md-5 p-3 d-block d-sm-none">
+        <div class="container form-register">
+            <form class="form" action="#">
+                <h1>Ingresa tu número de documento</h1>
+                <select name="documento" id="documento" class="space">
+                    <option value="documento1">DNI</option>
+                    <option value="documento2">CARNÉ DE EXTRANJERÍA</option>
+                    <option value="documento3">PASAPORTE</option>
+                    <option value="documento4">RUC</option>
+                    <option value="documento5">PTP</option>
+                </select>
+                <input class="spaces" type="number" name="apellidos" id="apellidos" placeholder="Número de documento"><br>
+                <input class="btns" type="submit" value="Continuar">
+            </form>
+        </div>
+    </div>
+    <!--! FOOTER -->
+    <!--? Se muestra en dispositivos móviles pequeños -->
+    <div class="container-fluid p-2 bg-warning text-center d-block d-sm-none">
+        <p class="align-self-center m-0 p-0">Todos los derechos reservados - 2021</p>
+    </div>
+    <!--? Se muetra en laptops, computadoras de mesa y iPads -->
+    <div class="container-fluid p-3 pt-4 row row-cols-1 row-cols-md-4 g-4 bg-warning d-sm-flex d-none" style="font-size: small; margin: 0;">
+        <div class="col mb-0">
+            <div class="col-10"><img src="/img/Logo TC 1 azul Sin fondo.png" class="col-6 mb-2" alt=""></div>
+            <p>Todos los derechos reservados - 2021</p>
+            <div class="container d-flex m-0 p-0 pe-5 mb-3 col-10">
+                <a href="#" class="col-3"><img src="/img/iconf.png" class="col-8" alt=""></a>
+                <a href="#" class="col-3"><img src="/img/iconi.png" class="col-8" alt=""></a>
+                <a href="#" class="col-3"><img src="/img/icont.png" class="col-8" alt=""></a>
+                <a href="#" class="col-3"><img src="/img/iconyt.png" class="col-8" alt=""></a>
+            </div>
+            <p class="p-0 m-0">Para ventas y servicios, contactenos</p>
+            <h3 class="fw-normal mb-3">0800 ****2</h3>
+            <span>
+                <a href="/index/v.html">Términos y condiciones de la web</a><br>
+                <a href="/index/v.html">Condiciones de garantía de equipo</a>
+            </span>
+        </div>
+        <div class="col">
+            <span>De utilidad</span><br>
+            <br>
+            <span>
+                <a href="#">Adquiere iPhone 6, 6S y SE</a><br>
+                <a href="#">Consulta de línea</a><br>
+                <a href="#">Mide tu velocidad</a><br>
+                <a href="#">Liberación de tu equipo móvil</a><br>
+                <a href="#">Comprobantes electrónicos</a><br>
+                <a href="#">Llamada por llamada</a><br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="#">Política de Privacidad</a><br>
+                <a href="#">Derechos de ARCO</a>
+            </span>
+        </div>
+        <div class="col">
+            <span>Nos hacemos cargo</span><br>
+            <br>
+            <span>
+                <a href="#">Devoluciones por interrupciones</a><br>
+                <a href="#">Atención a reclamos</a><br>
+                <a href="#">Consulta de reclamos</a><br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="#">Sistemas de consultas</a><br>
+                <a href="#">Neutralidad de red</a>
+            </span>
+        </div>
+        <div class="col">
+            <span>Institucional</span><br>
+            <br>
+            <span>
+                <a href="#">Sobre nosotros</a><br>
+                <a href="#">Sostenibilidad</a><br>
+                <a href="#">Centro de prensa</a><br>
+                <a href="#">Trabaja en TeleConecta</a><br>
+                <a href="#">Proveedores</a><br>
+                <a href="#">Trabajos de mantenimiento</a><br>
+                <a href="#">Portal de anuncios</a><br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="#">Información y anuncios</a><br>
+            </span>
+        </div>
+    </div>
+    <div class="container-fluid text-center bg-dark text-light d-sm-block d-none"><p class="py-2 m-0">Todas las ilustraciones presentadas en la página web fueron credas por Diana Morán Carranza, específcamente para la misma.</p></div>
+    <img class="wabtn" src="/img/iconw.png" alt="WhatsApp" onclick="window.location.href='https://wa.me/51947679541?text=Hola!%20Estoy%20interesado%20en%20sus%20servicios'" target:_blank>
+</body>
+</html>

@@ -1,0 +1,174 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #FFF;
+    color: #132240;
+    width: 100%;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.logo {
+    text-align: center;
+    height: 5.7em;
+    margin: .5em;
+}
+
+.cero {
+    height: 2em;
+    padding: 0;
+}
+
+/* Promoción estática */
+.line1 {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    z-index: 5;
+}
+
+/* Primer Carrusel de Imágenes */
+#carousel img {
+    width: 100%;
+    float: right;
+    animation: glow .5s;
+    z-index: 1;
+}
+
+@keyframes glow {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+/* ICONOS DE REDIRECCIÓN A LA TIENDA */
+.cell {
+    width: 100%;
+    height: 25em;
+    padding: 3em 10em;
+}
+
+.cell a {
+    color: #47505c;
+}
+
+.cell a:hover {
+    color: #011927;
+}
+
+.cell h1 {
+    text-align: center;
+}
+
+.card img {
+    transition: .2s;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+.e-card {
+    animation: grow .6s infinite alternate;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+#email {
+    background: none;
+    font-size: 1em;
+    border: none;
+    padding: .5em;
+    width: 90%;
+    border-bottom: .1em solid;
+}
+
+form span {
+    font-size: .75em;
+}
+
+form span a {
+    font-weight: 600;
+    color: #E78000;
+}
+
+.form section {
+    width: 20%;
+    height: 18em;
+    float: left;
+    padding: 11% 5.5%;
+}
+
+.form section button {
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: .8em 1.5em;
+    color: #FFF;
+    border: #F4F4F4 solid .15em;
+    border-radius: 10em;
+    background: #132240;
+    transition: .3s;
+}
+
+.form section button:hover {
+    border: #132240 solid .15em;
+}
+
+/* FOOTER */
+
+span a {
+    color: #000;
+    text-decoration: none;
+}
+
+span a:hover {
+    text-decoration-line: underline;
+}
+
+.ico {
+    text-align: center;
+    margin-right: .8em;
+    height: 2.5em;
+    font-size: .8em;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ilu {
+    width: 100%;
+    padding: .1em 0 1em 0;
+}
+
+/* ICONO DE REDIRECCIÓN A WHATSAPP */
+.wabtn {
+    width: 5em;
+    height: 5em;
+    display: block !important;
+    position: fixed;
+    z-index: 10;
+    bottom: 1em;
+    right: 1em;
+    border-radius: 10em !important;
+    transition-duration: .3s;
+}
+
+.wabtn:hover{
+    box-shadow: 0 0 1em 0 #222c368e;
+    cursor: pointer;
+}

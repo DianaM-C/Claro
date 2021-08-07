@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/tienda.css">
+    <link rel="shortcut icon" href="/img/TC.ico" type="image/x-icon">
+    <script src="/js/tienda.js"></script>
+    <!-- BootsTrap CSS - Js -->
+    <link rel="stylesheet" href="/dist/css/bootstrap.css">
+    <script src="/dist/js/bootstrap.js"></script>
+    <title>TeleConecta - Tienda</title>
+</head>
+<body>
+    <!--! BARRA SUPERIOR -->
+    <div class="container-fluid m-0 p-2 bg-primary d-flex">
+        <a href="/personas/index.html" class="d-sm-block d-none"><img class="logo me-3" src="/img/Logo TC 1 Sin fondo.png" alt="TC Logo" class="one" ></a>
+        <div class="container-fluid">
+            <nav class="navbar navbar-dark">
+                <div class="container-fluid">
+                    <a href="https://www.intercorp.com.pe/" target="_blank" class="d-sm-block d-none"><img class="cero" src="/img/intercorp.png" alt="logo intercorp"></a>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-danger" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-block d-sm-none text-warning" href="/personas/index.html">TeleConecta</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/personas/index.html">Hogar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/personas/tienda.html">Móvil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/personas/agendar_cita.html">Atención al cliente</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Contáctenos
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Agendar una cita</a></li>
+                                    <li><a class="dropdown-item" href="#">Contacto por WhatsApp</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--! BANNER PROMOCIONAL SUPERIOR -->
+    <img src="/img/Banner8.png" alt="" class="col-12 d-sm-block d-none sticky-top">
+    <img src="/img/Banner9.png" alt="" class="col-12 d-block d-sm-none sticky-top">
+    <!--! CARRUSEL -->
+    <div class="container-fluid m-0 row row-cols-1 row-cols-md-2 g-4 p-5 alig align-self-center bg-light">
+        <div class="col col-md-5 ps-md-5 align-self-center">
+            <p class="d-sm-block d-none">TU EQUIPO USADO COMO PARTE DE PAGO</p>
+            <h1 class="text-sm-start text-center">Paga la mitad de un nuevo ZTE</h1>
+            <button type="button" class="btn btn-danger d-sm-block d-none">Lo quiero</button>
+        </div>
+        <div class="col col-md-6">
+            <div id="carousel">
+                <img src="/img/LittleBanner1.png" alt="" class="col-12">
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary col-12 d-block d-sm-none">Lo quiero</button>
+    </div>
+    <!--! ICONOS DE REDIRECCIÓN -->
+    <div class="container py-5 my-3">
+        <div class="container mb-5">
+            <h1 class="text-center p-md-5 px-2 pb-4">¿Qué estás buscando?</h1>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="d-flex col m-0 p-0">
+                <div class="col">
+                    <!-- Agendar cita -->
+                    <div class="card text-center border-0">
+                        <a href="/personas/agendar_cita.html"><img src="/img/cell1.png" alt="iconcell" class="icon" style="height: 6em;" ></a>
+                        <div class="card-body">
+                            <a href="/personas/agendar_cita.html" style="text-decoration: none;"><p class="card-text">Cámbiarte a TeleConecta</p></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- Activación Chip -->
+                    <div class="card text-center border-0">
+                        <a href="/personas/activacion_chip.html"><img src="/img/cell2.png" alt="iconcell" class="icon" style="height: 6em;" ></a>
+                        <div class="card-body">
+                            <a href="/personas/activacion_chip.html" style="text-decoration: none;"><p class="card-text">Renovar tu equipo</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex col m-0 p-0">
+                <div class="col">
+                    <!-- Tienda -->
+                    <div class="card text-center border-0">
+                        <a href="/personas/tienda.html"><img src="/img/acces.png" alt="iconcell" class="icon" style="height: 6em;" ></a>
+                        <div class="card-body">
+                            <a href="/personas/tienda.html" style="text-decoration: none;"><p class="card-text">Accesorios</p></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- Tienda -->
+                    <div class="card text-center border-0">
+                        <a href="/personas/tienda.html"><img src="/img/home.png" alt="iconcell" class="icon" style="height: 6em;" ></a>
+                        <div class="card-body">
+                            <a href="/personas/tienda.html" style="text-decoration: none;"><p class="card-text">TeleConecta hogar</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--! FORMULARIO DE REGISTRO -->
+    <form class="container-fluid m-0 row row-cols-1 row-cols-md-3 g-4 p-5 alig align-self-center bg-light align-items-center">
+        <div class="container bg-primary rounded-pill col col-md-2 text-center">
+            <img src="/img/sobre.png" alt="" class="col-md-10 col-3 e-card">
+        </div>
+        <div class="container col col-md-6">
+            <h1>¿Quieres estar al tanto de nuestras ofertas?</h1>
+            <p>Suscríbete con tu dirección de correo electrónico y disfruta de los mejores beneficios y descuentos.</p>
+            <input type="email" class="form-control border-dark border-1 border-top-0 border-end-0 border-start-0 rounded-0 bg-transparent" placeholder="name@example.com" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+            <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico.</div>
+        </div>
+        <div class="container col col-md-2">
+            <button type="submit" class="btn btn-danger col-12 d-sm-block d-none">Enviar</button>
+        </div>
+        <button type="button" class="btn btn-primary col-12 d-block d-sm-none">Lo quiero</button>
+    </form>
+    <!--! FOOTER -->
+    <!--? Se muestra en dispositivos móviles pequeños -->
+    <div class="container-fluid p-2 bg-warning text-center d-block d-sm-none">
+        <p class="align-self-center m-0 p-0">Todos los derechos reservados - 2021</p>
+    </div>
+    <!--? Se muetra en laptops, computadoras de mesa y iPads -->
+    <div class="container-fluid p-3 pt-4 row row-cols-1 row-cols-md-4 g-4 bg-warning d-sm-flex d-none" style="font-size: small; margin: 0;">
+        <div class="col mb-0">
+            <div class="col-10"><img src="/img/Logo TC 1 azul Sin fondo.png" class="col-6 mb-2" alt=""></div>
+            <p>Todos los derechos reservados - 2021</p>
+            <div class="container d-flex m-0 p-0 pe-5 mb-3 col-10">
+                <a href="#" class="col-3"><img src="/img/iconf.png" class="col-8" alt=""></a>
+                <a href="#" class="col-3"><img src="/img/iconi.png" class="col-8" alt=""></a>
+                <a href="#" class="col-3"><img src="/img/icont.png" class="col-8" alt=""></a>
+                <a href="#" class="col-3"><img src="/img/iconyt.png" class="col-8" alt=""></a>
+            </div>
+            <p class="p-0 m-0">Para ventas y servicios, contactenos</p>
+            <h3 class="fw-normal mb-3">0800 ****2</h3>
+            <span>
+                <a href="/index/v.html">Términos y condiciones de la web</a><br>
+                <a href="/index/v.html">Condiciones de garantía de equipo</a>
+            </span>
+        </div>
+        <div class="col">
+            <span>De utilidad</span><br>
+            <br>
+            <span>
+                <a href="#">Adquiere iPhone 6, 6S y SE</a><br>
+                <a href="#">Consulta de línea</a><br>
+                <a href="#">Mide tu velocidad</a><br>
+                <a href="#">Liberación de tu equipo móvil</a><br>
+                <a href="#">Comprobantes electrónicos</a><br>
+                <a href="#">Llamada por llamada</a><br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="#">Política de Privacidad</a><br>
+                <a href="#">Derechos de ARCO</a>
+            </span>
+        </div>
+        <div class="col">
+            <span>Nos hacemos cargo</span><br>
+            <br>
+            <span>
+                <a href="#">Devoluciones por interrupciones</a><br>
+                <a href="#">Atención a reclamos</a><br>
+                <a href="#">Consulta de reclamos</a><br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="#">Sistemas de consultas</a><br>
+                <a href="#">Neutralidad de red</a>
+            </span>
+        </div>
+        <div class="col">
+            <span>Institucional</span><br>
+            <br>
+            <span>
+                <a href="#">Sobre nosotros</a><br>
+                <a href="#">Sostenibilidad</a><br>
+                <a href="#">Centro de prensa</a><br>
+                <a href="#">Trabaja en TeleConecta</a><br>
+                <a href="#">Proveedores</a><br>
+                <a href="#">Trabajos de mantenimiento</a><br>
+                <a href="#">Portal de anuncios</a><br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="#">Información y anuncios</a><br>
+            </span>
+        </div>
+    </div>
+    <div class="container-fluid text-center bg-dark text-light d-sm-block d-none"><p class="py-2 m-0">Todas las ilustraciones presentadas en la página web fueron credas por Diana Morán Carranza, específcamente para la misma.</p></div>
+    <img class="wabtn" src="/img/iconw.png" alt="WhatsApp" onclick="window.location.href='https://wa.me/51947679541?text=Hola!%20Estoy%20interesado%20en%20sus%20servicios'" target:_blank>
+</body>
+</html>
