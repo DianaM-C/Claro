@@ -1,13 +1,14 @@
 .glow {
-    animation: alternate infinite 3s glow;
+    z-index: unset;
+    animation: alternate infinite .3s glow;
 }
 
 @keyframes glow {
     to {
-        transform: scale(1);
+        transform: scale(0.9);
     }
 
     from {
-        transform: scale(1.1);
+        transform: scale(1);
     }
 }
