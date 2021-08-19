@@ -108,8 +108,8 @@ audio {
     border: none;
     border-radius: 3em;
     padding: .7em;
-    color:#FFF;
     margin: .5em 0;
+    color:#FFF;
     transition: .3s;
 }
 
@@ -117,6 +117,7 @@ audio {
     cursor: pointer;
     background: #ff1b1b;
     transition: .3s;
+    color:#FFF;
 }
 
 .form-register h1 {
